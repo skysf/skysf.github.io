@@ -17,13 +17,25 @@ function initAll() {
 function showSomething() {
 	switch(this.id) {
 		case "Linkedin":
-			alert("https://www.linkedin.com/in/lu-sky-a3850138/");
+            window.location = "https://www.linkedin.com/in/tianyu-lu-a3850138/"
 			break;
 		case "AppStore":
-			alert("Ask not what your country can do for you...");
+            //Pop up a window with "OK" and "Cancel"
+            var appAnswer = confirm("Click OK to AppStore page")
+			
+            //If user click ok, it will jump to below AppStore link
+            if (appAnswer) {
+                window.location = "https://itunes.apple.com/us/app/tip-calculator-split-u-bills/id1385884544?mt=8"
+            }
 			break;
 		case "Apartment":
-			alert("I had my own apartment before!");
+			//Pop up a window with "OK" and "Cancel"
+            var apartmentAnswer = confirm("Click OK to YouTube to watch guest review for my apartment")
+			
+            //If user click ok, it will jump to youtube
+            if (apartmentAnswer) {
+                window.location = "https://www.youtube.com/watch?v=nlFHZg6GezA"
+            }
 			break;
 		default:
 	}
