@@ -3,18 +3,15 @@ Name: TIANYU(SKY) LU
 Student ID: @00300456
 Assignment: No.2
 */
-window.onload = initButtons; //Add buttons
-window.onload = writeMessage;//When pages loads, run function
+window.onload = initAll; //Add buttons
 
-function writeMessage() {
-    //Display textword on index.html
-    document.getElementById("helloMessage").innerHTML = "Hello, worlds!";
-}
-
-function initButtons() {
+function initAll() {
 	document.getElementById("Linkedin").onclick = showSomething;
 	document.getElementById("AppStore").onclick = showSomething;
 	document.getElementById("Apartment").onclick = showSomething;
+    
+    //Display message
+    document.getElementById("helloMessage").innerHTML = "Mobile App Developer";
 }
 
 function showSomething() {
