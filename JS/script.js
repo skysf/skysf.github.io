@@ -12,7 +12,24 @@ function initAll() {
     
     //Display message
     document.getElementById("helloMessage").innerHTML = "Mobile App Developer";
-}
+    
+//    for(var i = 0; i < 10; i++) {
+//        document.write("SKY is the number " + i + " Programmer");
+//        document.write("<br>");
+//        
+//    }
+    
+//    do {
+//        var ans = prompt("Want to roll?(y/n)");
+//        roll();
+//    }while (ans == "y");
+//}
+//
+//function roll() {
+//    var newNum1 = Math.random() * 6;
+//    var newNum2 = Math.random() * 6;
+//    alert("You got Dice1: " + Math.floor(newNum1) + "\nAnd Dice2: " + Math.floor(newNum2));
+//}
 
 function showSomething() {
 	switch(this.id) {
