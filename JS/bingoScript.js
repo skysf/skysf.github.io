@@ -1,7 +1,16 @@
+//When window finishes loading, trigger the initAll() function
 window.onload = initAll;
 
 //Array to store used nums 
 var usedNums = new Array(76);
+
+//AD: -
+var theAdCounter = 0;
+//AD: -the array stores the links when user click AD banner
+var adClickURL = new Array("linkedin.com/in/tianyu-lu-a3850138/","apple.com","youtube.com/watch?v=1jWCXJfxHQM");
+//AD: -the array contains the names of the three GIF files
+var adImages = new Array("Images/banner1.png","Images/banner2.png","Images/banner3.png");
+
 
 function initAll() {
 	if (document.getElementById) {
@@ -11,8 +20,44 @@ function initAll() {
 	else { //If user's browser does not support script, show alert
 		alert("Sorry, your browser doesn't support this script");
 	}
+    
+    //AD: - first checks to see if the adBannerImages object is surrounded by a link tag. if so, when the link is clicked, the newLocation() function will be called. Finally, the rotate() functions is called
+    if (document.getElementById("adBannerImages").parentNode.tagName == "A") {
+		document.getElementById("adBannerImages").parentNode.onclick = newLocation;
+	}
+	
+	rotate();
+    
 }
 
+
+/***************AD FUNC************************/
+function newLocation() {
+    //set current doc window to the text string "htpp://www." plus the value of one item from adClickURL.
+    
+    
+    document.location.href = "http://www." + adClickURL[theAdCounter];
+    
+    
+	
+
+	return false;//tell browser does not load href in html file. load above link only
+}
+
+function rotate() {
+    //increase by one
+	theAdCounter++;
+    //when theAdCounter reaches same value as number of items in the array, set it back to 0
+	if (theAdCounter == adImages.length) {
+		theAdCounter = 0;
+	}
+	document.getElementById("adBannerImages").src = adImages[theAdCounter];
+    
+    //Every 3 seconds, change image
+	setTimeout(rotate, 3 * 1000);
+}
+
+/***************GAME FUNC************************/
 //Generate new play card
 function newCard() {
 	for (var i=0; i<24; i++) {
