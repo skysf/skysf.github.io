@@ -28,6 +28,23 @@ function initAll() {
 	
 	rotate();
     
+    //POP UP Window func
+    //The for loop go through all links,if link's class name equals "robotWindowPopUp", when user click on it, call function newRobotWindow
+    for (var i=0; i<document.links.length; i++) {
+		if (document.links[i].className == "robotWindowPopUp") {
+			document.links[i].onclick = newRobotWindow;
+		}
+	}
+    
+}
+
+/***************POP UP WINDOW FUNC************************/
+/*The variable robotWindow contains a new window object, referencing the image file robot.png. The name of this new window is robotWindow. Names are required, because we might want to reference this window later in a link or in another script. The new window has a width of 400 pixels and a height of 300 pixels; these parameters are optional.
+
+Smith, Dori. JavaScript: Visual QuickStart Guide (p. 129). Pearson Education. Kindle Edition. */
+function newRobotWindow() {
+	var robotWindow = window.open("images/robot.png", "robotWindow", "resizable=no,width=400,height=300");
+	return false;
 }
 
 
