@@ -43,7 +43,7 @@ function initAll() {
 
 Smith, Dori. JavaScript: Visual QuickStart Guide (p. 129). Pearson Education. Kindle Edition. */
 function newRobotWindow() {
-	var robotWindow = window.open("images/robot.png", "robotWindow", "resizable=no,width=400,height=300");
+	var robotWindow = window.open("Images/robot.png", "robotWindow", "resizable=no,width=400,height=300");
 	return false;
 }
 
