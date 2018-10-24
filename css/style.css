@@ -45,6 +45,22 @@ p {
     color: aliceblue;
 }
 
+table#t01 tr:nth-child(even) {
+    background-color: #292f35;
+}
+table#t01 tr:nth-child(odd) {
+    background-color: #5f6163;
+}
+table#t01 th {
+    color: white;
+    background-color: black;
+}
+table#t01 {
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
 img{
     border: medium outset #4b4e51;
     box-shadow: 8px 8px 8px rgba(0,0,0,.3)

@@ -11,7 +11,7 @@ function initAll() {
 	document.getElementById("Apartment").onclick = showSomething;
     
     //Display message
-    document.getElementById("helloMessage").innerHTML = "Mobile App Developer";
+    document.getElementById("helloMessage").innerHTML = "HELLO WORLD";
 }
 
 
