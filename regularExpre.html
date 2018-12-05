@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Car Picker</title>
-	<link rel="stylesheet" href="css/formStyle.css">
-	<script src="JS/formJS.js"></script>	
+	<title>Regular Expression</title>
+	<link rel="stylesheet" href="css/regularExpre.css">
+	<script src="JS/regularExpre.js"></script>	
 </head>
 <body>
-<h2 class="centered">International Student Discount Form</h2>
+<h2 class="centered">Regular Expressions</h2>
 <form action="someAction.cgi">
 	<p><label for="emailAddr">Email Address:<input id="emailAddr" type="text" size="30" class="reqd email"></label></p>
 	<p>Colors:
@@ -16,6 +16,13 @@
 			<option value="Green">Non-Int'l Student</option>
 		</select>
 	</p>
+    <p>
+        <label>Enter your phone number (with area code):<br>
+	    <input class="phone" type="text" size="50" id="phoneField"></label>
+    </p>
+    <p>
+        <label>Image URL: <input class="imgURL" type="text" size="50"></label>
+    </p>
 	<p>Options:
 		<label for="sunroof"><input type="checkbox" id="sunroof" value="Yes">20% Off (Int'l Student Only)</label>
 		<label for="pWindows"><input type="checkbox" id="pWindows" value="Yes">10% Off</label>

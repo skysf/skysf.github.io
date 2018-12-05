@@ -1,0 +1,37 @@
+#lEye, #rEye {
+	position: absolute;
+	top: 65px;
+	width: 20px;
+	height: 20px;
+}
+
+#lDot, #rDot {
+	position: absolute;
+	top: 72px;
+	width: 4px;
+	height: 4px;
+}
+
+#lEye {
+	left:95px;
+}
+
+#rEye {
+	left: 158px;
+}
+
+#lDot {
+	left: 190px;
+}
+
+#rDot {
+	left: 160px;
+}
+
+#cat {
+    margin-left: 50px;
+    width: 156px;
+	height: 139px;
+}
+
+
