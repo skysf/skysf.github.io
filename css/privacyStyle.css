@@ -36,6 +36,16 @@ h1 {
     font-family: 'Open Sans Condensed', sans-serif;
 }
 
+h2 {
+    color: bisque;
+    font-family: 'Ubuntu',cursive, sans-serif;
+}
+
+h3 {
+    color: cornsilk;
+    font-family: 'Ubuntu',cursive, sans-serif;
+}
+
 p {
     font-size: 12pt;
     line-height: 14pt;
